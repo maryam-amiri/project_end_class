@@ -1,0 +1,13 @@
+{% extends 'base2.html' %}
+{% block page_title %}
+login
+{% endblock %}
+{% block page_content %}
+    <h1>Login</h1>
+    <form method="post">
+    {% csrf_token %}
+{#------------------------------------------as_p baraye namayesh dadane begheir az table chon dar default besoorate table neshan midahad#}
+    {{ form_login.as_p }}
+    <button type="submit">login</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karbaran List</title>
+</head>
+<body>
+    <h1>
+        karbaran list
+    </h1>
+    <div style="line-height: 30px">
+    <ul>
+        {% for karbaran in all_karbaran %}
+            <li>
+                <a href="#" >{{ karbaran.name }}</a>
+                <b>family:{{ karbaran.family }}</b>
+            </li>
+        {% endfor %}
+
+    </ul>
+    </div>
+
+</body>
+</html>
